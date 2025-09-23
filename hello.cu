@@ -5,7 +5,6 @@
 __global__ void vectorAdd(float *A, float *B, float *C, int N){
 
     //intialize global thread index
-    
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
 
     if(idx < N){
